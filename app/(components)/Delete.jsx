@@ -3,17 +3,20 @@ import { faX } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useRouter } from "next/navigation"
 
-const Delete = ({id}) => {
+const Delete = ({ id }) => {
 
   //next navigation(useRouter)
   const router = useRouter();
-  const deleteTicket = async()=>{
-    const res = await fetch(`http://localhost:3000/api/Tickets/${id}`,
-     { method:"DELETE"});
+  const deleteTicket = async () => {
 
-      if(res.ok){
-        router.refresh()
-      };
+    const baseURL = process.env.NEXT_PUBLIC_API_BASE_URL;
+
+    const res = await fetch(`${baseURL}/Tickets/${id}`,
+      { method: "DELETE" });
+
+    if (res.ok) {
+      router.refresh()
+    };
   }
 
   return (
