@@ -2,14 +2,21 @@ import TicketCard from "./(components)/TicketCard"
 
 const getTickets = async ()=>{
   try {
-    const res = await fetch('http://localhost:3000/api/Tickets',{
+    
+    const baseURL = process.env.API_BASE_URL;
+
+    if (!baseURL) {
+      throw new Error("API base URL is not defined in environment variables");
+    }
+
+    const res = await fetch(`${baseURL}/Tickets`,{
       cache:"no-store",
     });
 
     return res.json();
 
   } catch (error) {
-    return { res: "There was an error!" }
+    throw error;
   }
 }
 const Dashboard = async() => {

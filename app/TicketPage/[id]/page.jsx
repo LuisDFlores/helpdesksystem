@@ -1,7 +1,14 @@
 import TicketForm from "@/app/(components)/TicketForm"
 
 const getTicketById = async (id)=>{
-    const res = await fetch(`http://localhost:3000/api/Tickets/${id}`,{
+
+  const baseURL = process.env.API_BASE_URL;
+
+  if (!baseURL) {
+    throw new Error("API base URL is not defined in environment variables");
+  }
+
+  const res = await fetch(`${baseURL}/Tickets/${id}`,{
       cache: "no-store",
   });
 
