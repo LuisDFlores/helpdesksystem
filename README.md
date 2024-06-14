@@ -1,4 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Help-desk-Ticket System
+
+This is a fullstack application build on Next.js.  The templating language EJS was used and was styled with tailwind css and css customizations. Mongo DB alongside moongoose were used to store variables
+
+## Optimizations
+
+1. Timestamp Formatting:
+Implement user-friendly timestamp formats, such as "DD-MM-YYYY HH
+" or "relative time" (e.g., "2 hours ago").
+2. Card Background Colors:
+Differentiate tickets with distinct background colors based on their status for better visual recognition.
+
+3. UI Color Scheme Overhaul:
+Redesign the color scheme for a more cohesive and visually appealing interface.
+
+## Coding Practice Optimizations
+
+1. Code Quality Enhancements
+Consistent File Formatting:
+Ensure all files are uniformly formatted using a linter (e.g., ESLint) for consistent code style and cleanliness.
+2. Clarify EditMode:
+Clearly document the purpose and implementation of EDITMODE for better understanding and maintainability.
+
+3. Consistent Practices:
+Standardize naming and spacing conventions across the codebase for consistency.
 
 ## Getting Started
 
@@ -18,19 +42,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
