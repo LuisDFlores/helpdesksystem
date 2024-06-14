@@ -15,7 +15,6 @@ const getTicketById = async (id)=>{
   if(!res.ok){
     throw new Error('Error getting ticket');
   }
-
   return res.json();
  
 }

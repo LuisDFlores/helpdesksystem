@@ -45,7 +45,7 @@ const handleSubmit = async (e) =>{
             throw new error("Error In Creating Ticket.")
         }
     }
-
+    console.log(`Would normally send email here`)
     router.refresh()
     router.push("/")
 };
